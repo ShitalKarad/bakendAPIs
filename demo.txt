@@ -53,7 +53,7 @@ It provides templating engines to build dynamic content on the web pages by crea
   validation of the MongoDB database can be done easily.
 
   mogoose is a object database module(odm) library it allows u to communicate your bakend to database
-  it allows u to declre scemas and its vali dation.
+  it allows u to declre scemas and its validation.
 
   Mongoose is an Object Data Modeling (ODM) library for MongoDB. It defines a strongly-typed-schema, 
   with default values and schema validations which are later mapped to a MongoDB document. 
@@ -114,3 +114,82 @@ From your frontend or any API client (e.g., Postman), send a POST request to you
 
 Remember to adapt this structure to your specific project's needs, and make sure to handle error cases and potential 
 security concerns, such as data validation and sanitization.
+
+//MongoDB is a document database. It stores data in a type of JSON format called BSON.
+
+//Balance Between Security and Performance:
+
+The reason 10 is often chosen as the default is that it strikes a reasonable balance between security and 
+. A higher number of rounds increases security but also increases the time it takes to hash passwords. 
+If the hashing process is too slow, it can impact the user experience, especially during login operations.
+
+Conversely, if you use too few rounds, it might make it easier for attackers to crack passwords using
+ modern hardware and techniques.
+
+ What is an API?
+APIs are mechanisms that enable two software components to communicate with each other using a set of definitions
+ and protocols. For example, the weather bureau’s software system contains daily weather data. The weather app on 
+ your phone “talks” to this system via APIs and shows you daily weather updates on your phone.
+
+ //What are REST APIs?
+REST stands for Representational State Transfer. REST defines a set of functions like GET, PUT, DELETE, etc.
+ that clients can use to access server data. Clients and servers exchange data using HTTP.
+
+The main feature of REST API is statelessness. Statelessness means that servers do not save client data between 
+requests. Client requests to the server are similar to URLs you type in your browser to visit a website. 
+The response from the server is plain data, without the typical graphical rendering of a web page.
+
+Payload
+The second part of the token is the payload, which contains the claims. Claims are statements about an 
+entity (typically, the user) and additional data. There are three types of claims: registered, public, 
+and private claims.
+
+What is a payload in API?
+In a REST API, a payload refers to the data or information that is sent by the client in a request to the server
+ or the data that is returned by the server in response to a request.
+
+Header
+The header typically consists of two parts: the type of the token, which is JWT, and the signing 
+algorithm being used, such as HMAC SHA256 or RSA.
+
+What is authentication & authorization ?!
+In simple words, Authentication is the process of verifying who a user is (who you are), and
+Authorization is the process of verifying what they have access to (what you are allowed to do).
+
+//logger methods
+
+info: Used to log general information and operational details about the application's execution.
+ This might include startup information, successful operations, or other noteworthy events.
+
+debug: Used for logging detailed debugging information, often used during development to track the 
+flow of code and identify issues.
+
+warn (warning): Used to log warnings or alerts that don't necessarily indicate errors but might point 
+out potential problems or issues.
+
+error: Used to log errors and exceptions that occur during the execution of the application. This is
+ important for tracking issues that need attention.
+
+fatal (critical): Used to log critical errors or failures that might lead to the application crashing or 
+becoming unusable.
+
+trace: Used to log very detailed information, often providing insights into the specific flow of code 
+execution. It's more detailed than debug.
+
+log: A generic method used to log messages at a custom level. It's not as common as the other methods,
+ as it's more flexible but less standardized.
+
+
+logger.info('This is an information message.');
+logger.debug('Debugging details here.');
+logger.warn('This is a warning message.');
+logger.error('An error occurred.');
+logger.fatal('A critical failure.');
+In the example above, the logger methods (info, debug, warn, error, fatal) are used to log messages 
+at different levels of severity. 
+The logger is configured to display log messages on the console and also save them to a log file named app.log.
+
+
+
+
+

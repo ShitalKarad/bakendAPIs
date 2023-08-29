@@ -3,3 +3,7 @@ logs/
 README.md
 tests/
 package-lock.json
+babelrc
+.env
+.eslintrc
+.demo.txt
